@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Integer numero;
+    
+    numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número para saber se é divisível por 5: "));
+
+    if(numero %5 == 0) {
+      JOptionPane.showMessageDialog(null, "Seu número é divisível por 5!");
+    }
+    else {
+      JOptionPane.showMessageDialog(null, "Seu número não é divisível por 5!");
+    }
+  }
+}
