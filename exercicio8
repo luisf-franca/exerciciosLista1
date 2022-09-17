@@ -1,0 +1,22 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+  Integer idade;
+  Integer repeticao;
+  Integer maiorIdade;
+
+  repeticao = 0;
+  maiorIdade = 0;
+
+      while (repeticao < 20){
+      idade = Integer.parseInt(JOptionPane.showInputDialog("Por favor, insira a sua idade: "));
+      if(idade >= 18){
+        maiorIdade ++;
+      }
+      repeticao ++;
+    }
+  JOptionPane.showMessageDialog(null, maiorIdade + " pessoas tem idade superior a 18 anos!");
+  }
+}
