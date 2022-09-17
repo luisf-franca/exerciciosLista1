@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    float numero;
+
+    numero = Float.parseFloat(JOptionPane.showInputDialog("Digite um número: "));
+
+    if (numero > 0) {
+      JOptionPane.showMessageDialog(null, "A raiz quadrada é: " + Math.sqrt(numero));
+    } else if (numero < 0) {
+      JOptionPane.showMessageDialog(null, "O quadrado é: " + (numero * numero));
+    }
+  }
+}
