@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Float polegadas;
+    Float centimetros;
+
+    JOptionPane.showMessageDialog(null, "Vamos converter polegadas para centímetros!");
+    
+    polegadas = Float.parseFloat(JOptionPane.showInputDialog("Digite em números inteiros o valor em polegadas"));
+    
+    centimetros = polegadas * 2.54f;
+    
+    JOptionPane.showMessageDialog(null, "O resultado da conversão é: " + centimetros + "cm");
+  }
+}
