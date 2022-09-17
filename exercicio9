@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Integer diagonalMaior;
+    Integer diagonalMenor;
+    Integer areaLosango;
+
+    JOptionPane.showMessageDialog(null, "Vamos calcular a área de um losango");
+    diagonalMaior = Integer.parseInt(JOptionPane.showInputDialog("Insira em centímetros a diagonal maior do losango"));
+    diagonalMenor = Integer.parseInt(JOptionPane.showInputDialog("Insira em centímetros a diagonal menor do losango"));
+
+    areaLosango = (diagonalMaior * diagonalMenor) / 2;
+    JOptionPane.showMessageDialog(null, "A área deste losango é: " + areaLosango + "cm");
+  }
+}
