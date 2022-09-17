@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Integer numero;
+
+    numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número: "));
+21
+    if (numero % 2 == 0) {
+      JOptionPane.showMessageDialog(null, "Seu número é par!");
+    } else {
+      JOptionPane.showMessageDialog(null, "Seu número é ímpar!");
+    }
+  }
+}
