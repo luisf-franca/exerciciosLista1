@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+
+    Float salario;
+    Float valorSolicitado;
+    Float valorMaxEmprestimo;
+
+    salario = Float.parseFloat(JOptionPane.showInputDialog("Informe o salário: "));
+    valorSolicitado = Float.parseFloat(JOptionPane.showInputDialog("Quanto você quer de empréstimo? "));
+
+    valorMaxEmprestimo = salario * 0.30f;
+
+    if (valorSolicitado <= valorMaxEmprestimo) {
+      JOptionPane.showMessageDialog(null, "Empréstimo concedido!");
+    } else {
+      JOptionPane.showMessageDialog(null, "Empréstimo negado!");
+    }
+  }
+}
